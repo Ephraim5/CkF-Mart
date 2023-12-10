@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    /* background: rgb(245, 229, 245); */
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin:2% 32%;
+    padding: 10px;
+    margin-top: -40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image{
+    position: relative;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.logo, .logo2{
+    font-weight: bold;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    margin: 15px 0;
+    color: orangered;
+}
+
+#alert{
+    color: red;
+    text-align: left;
+    margin: -5px 0;
+    font-size: 8pt;
+}
+
+.p1 .p2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 15px;
+}
+
+.p2{
+    margin-top: -30px;
+}
+
+.Edit:hover{
+    cursor: pointer;
+}
+
+form .edit-input{
+    background: #e6dada;
+    margin: none;
+    position: inherit;
+}
+
+h3{
+    margin: 15px 0;
+    padding: 5px 5px;
+    font-size: medium;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    padding: 5px 5px;
+}
+
+input{
+    height: 7vh;
+    border: 1px solid orangered;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+input::placeholder{
+    font-size: 15pt;
+    color: orangered;
+    padding: 0 10px;
+}
+
+input:hover{
+    cursor: pointer;
+    border: 2px solid rgb(136, 40, 5);
+}
+
+#Continue{
+    height: 7vh;
+    font-weight: bold;
+    font-size: 15pt;
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 5px;
+}
+
+.Continue{
+    background:orangered;
+    color: white;
+    margin: 30px 0;
+    border: none;
+}
+
+.Continue:hover{
+    background:rgb(136, 40, 5);
+}
+
+.logo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    right: 30px;
+}
+
+#image2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    /* margin-top: -20px; */
+    margin-left: 50px;
+}
+
+h1{
+    position: relative;
+    right: 15px;
+}
+
+
+footer{
+    margin-top: 50px;
+}

@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: 2% 32%;
+    margin-top: -40px;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image{
+    position: relative;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+.logo, .logo2{
+    font-weight: bold;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    margin: 15px 0 10px;
+    color: orangered;
+}
+
+h3{
+    margin: 15px 0;
+    padding: 5px 5px;
+    font-size: medium;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    padding: 5px 5px;
+}
+
+input{
+    height: 7vh;
+    border: 1px solid rgb(136, 40, 5) ;
+    border-radius: 4px;
+}
+
+input::placeholder{
+    font-size: 15pt;
+    color: orangered;
+    padding: 0 10px;
+}
+
+input:hover{
+    cursor: pointer;
+    border: 2px solid rgb(136, 40, 5);
+}
+
+button{
+    height: 7vh;
+    font-weight: bold;
+    font-size: 15pt;
+    /* box-shadow: 3px 3px #afa5a5; */
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 5px;
+}
+
+.btn btn-success{
+    background:orangered;
+    color: white;
+    margin: 30px 0;
+    border: none;
+    box-shadow: 3px #333;
+}
+
+.btn btn-success:hover{
+    background:rgb(136, 40, 5);
+}
+
+.Facebook{
+    margin: 40px 0 5px;
+    background-color:rgb(54, 80, 194);
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+.Facebook:hover{
+    background-color: rgb(31, 48, 124);
+    box-shadow: inset;
+}
+
+.p2 .p1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 0px 0 10px;
+}
+
+.logo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    right: 30px;
+}
+
+#image2{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    /* margin-top: -20px; */
+    margin-left: 50px;
+}
+
+h1{
+    position: relative;
+    right: 15px;
+}
+
+footer{
+    margin-top: 30px;
+}
+/* #floatingInput:focus{
+    outline: none;
+} */
