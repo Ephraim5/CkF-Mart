@@ -24,8 +24,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 450px;
-    background-color:whitesmoke;
-    box-shadow:inset 1px 2px 3px 5px rgb(214, 211, 211);
+    background-color:black;
+    box-shadow:inset 1px 2px 3px 5px black;
     height: 80.5vh;
     padding:20px 10px 20px 10px ;
     z-index: 800;
@@ -58,32 +58,43 @@ body{
 }
 
 .carter{
-    width: 100%;
+    width: 95%;
     height: 120px;
     border-radius: 20px;
+
     border: none;
     background-color: orangered;
     position: relative;
     display: flex;
-   padding: 5px 10px 5px 10px;
+   padding: 10px 10px 10px 10px;
 } 
 .carter img{
    height: 100%;
    width: auto;
 }
-.carter h2{
+.carter h1{
    color: black;
    border-radius: 20px;
    height: 50px;
-   font-size: 30px;
-   margin: 30px 10px 10px 10px ;
+   font-size: 25px;
+   margin: 30px 30px 10px 10px ;
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.carter h2{
+    font-size: 18px;
+    text-wrap: wrap;
+    width:80px;
+    height:auto;
+    margin-right: 4px;
+    top:25%;
+    position: relative;
+
 }
 .carter span{
     position: relative;
     right:-35px;
     top:30px;
-    font-size: 20px;
+    font-size: 12px;
     color:black;
 
 }
@@ -95,6 +106,17 @@ body{
     top:25px;
     font-size: 20px;
     padding: 0px 0px 0px 8px ;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+.buynow{
+    user-select: none;
+    cursor: pointer;
+}
+.follow{
+    display:none;
 }
 .cart_room{
     width:450px;
@@ -108,4 +130,68 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+.h1p{
+    display: none;
+}
+.h1l{
+    display: block;
+}
+@media screen and (max-width:700px){
+    .hide{
+        display:none;
+    }
+    .h1p{
+        display: block;
+    }
+    .h1l{
+        display:none;
+    }
+    .txt{
+        text-wrap: nowrap;
+        display: flex;
+        
+    }
+    .follow{
+        display: flex;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        top:50%;
+        z-index: 800;
+        right: 0px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .cart_room{
+        width:100vw;
+        height:100vh;
+        scroll-behavior: smooth;
+        border-bottom: 4px solid var(--cart_line);
+        margin-bottom: 20px;
+        padding-top: 20px;
+        overflow-y: scroll;
+        overflow-x:hidden ;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+  
+    .carts{
+        right:-100vw;
+        transition: 1.5s ease;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        height:100vh;
+        background-color:black;
+        box-shadow:inset 1px 2px 3px 5px black;
+        padding:20px 10px 20px 10px ;
+        z-index: 800;
+        text-align: center;
+    }
+
 }
