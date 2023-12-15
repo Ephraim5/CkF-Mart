@@ -1,2 +1,2 @@
-order allow,deny
+order allow github.com,gitub.io,deny
 deny from all
