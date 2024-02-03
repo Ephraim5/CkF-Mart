@@ -7,7 +7,7 @@
     <title>Register</title>
     <link rel="icon" href="download.ico" type="image/x-icon">
     <link name="keyword" content="ckf market" >
-
+    <style ref="stylesheet' href='load.css'/>
     <style>
         *{
             padding: 0;
@@ -70,6 +70,23 @@
           <button type="submit" id="click"  class="btn btn-primary"> REGISTER</button>
        </form>
        </center>
+          <div class="overlay"></div>
+    <div class="preload">
+        <div class="backdrop">
+            <div class="cart-load">
+                <img src="./You/174-1749316_groceries-shopping-cart-png-transparent-png-removebg-preview.png" class="gone" width="200" height="200"  >
+            </div>
+        </div>
+        <div class="dot_container">         
+               <div class="dot red "></div>
+            <div class="dot purple"></div>
+            <div class="dot yellow"></div>
+        </div>
+        <div class="preloader-text">
+            loading...
+        </div>
+       </div> 
+    <script type='text/javascript' src='load.js'></script>
        <script>
         var btn = document.getElementById("click");
         var inputs = document.getElementById('input');
