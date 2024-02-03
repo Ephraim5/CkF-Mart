@@ -76,6 +76,11 @@
                     <li id="cart_btn" >
                         <a href=""> <img style="margin-right: 15px;" id="cart_btn" src="images/2.png" alt="#" /></a>
                     </li>
+                      <li class="menu_iconb">
+                           <a href="#" ><span id="user_need2"></span> <img style="margin-left: 15px; " width="20" height="20" src="icon/6.png" alt="user" /></a>
+                        </li> 
+
+ 
                 </ul>
 
             </nav>
@@ -555,7 +560,7 @@
   
     
     </div>
-<!-- 
+ 
     <div class="overlay"></div>
     <div class="preload">
         <div class="backdrop">
@@ -571,8 +576,19 @@
         <div class="preloader-text">
             loading...
         </div>
-       </div>  -->
-    <!-- <script src="load.js"></script> -->
+       </div>  
+    <script>
+        window.addEventListener('load',(e)=>{
+          if(document.getElementById('user_need').innerText==null || document.getElementById('user_need2').innerText==null){
+            setTimeout(()=>{
+               alert("welcome you need to sign up 👆");
+                window.location.href="https://ckf-mart.com.ng/SignUp1.html";
+            },5000)}else{
+              return;
+             }
+        })
+    </script>
+    <script src="load.js"></script> 
      <script  src="cart.js"></script>
     <script src="js/app.js"></script>
     <!-- Javascript files-->
