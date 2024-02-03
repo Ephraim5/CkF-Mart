@@ -1,5 +1,5 @@
 var preload=document.querySelector('.preload');
-var preloadDuration=3000;
+var preloadDuration=4000;
 
 var hidePreload=()=>{
     setTimeout(()=>{
