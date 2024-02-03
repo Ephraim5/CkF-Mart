@@ -601,7 +601,7 @@
       };
 
         window.addEventListener('load',(e)=>{
-          if(document.getElementById('user_need').innerText==null || document.getElementById('user_need2').innerText==null){
+          if(document.getElementById('user_need').innerHTML==''){
             setTimeout(()=>{
                alert("welcome you need to sign up 👆");
                 window.location.href="https://ckf-mart.com.ng/SignUp1.html";
