@@ -13,6 +13,7 @@ const password=pack.get("password");
 const buy_code=pack.get("buy_code");
 const gender=pack.get("gender");
 document.getElementById("user_need").innerHTML=username.toLowerCase();
+document.getElementById("user_need2").innerHTML=username.toLowerCase();
 
 
 cart_b.addEventListener("click",carted)
