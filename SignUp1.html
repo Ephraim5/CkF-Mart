@@ -2,109 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=se, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="icon" href="download.ico" type="image/x-icon">
-    <link name="keyword" content="ckf market" >
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width:100vw;
-            height: 100vh;
-            position: relative;
-        }
-        select{
-            width:60vw;
-        }
-        input[type='text'],
-        input[type='email'],
-        input[type='password'],
-        button[type='submit']{
-            position: relative;
-            width:70vw;
-            height: 6vh;
-        }
-       
-        .gender{
-         width:70vw;
-         height: 6vh;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=se, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="icon" href="download.ico" type="image/x-icon">
+  <link name="keyword" content="ckf market">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    select {
+      width: 60vw;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    button[type='submit'] {
+      position: relative;
+      width: 70vw;
+      height: 6vh;
+    }
+
+    .gender {
+      width: 70vw;
+      height: 6vh;
+    }
+  </style>
 </head>
 
 <body>
-    <center>
-       
-        <img id="image" src="logocfk.png" style="display: flex; justify-content: center; align-items: center;" alt="">    
-        <span style="font-size: 30px; font-weight: 800; position: relative; top:-58px;">Welcome to CkF Mart</span>
-        <form class="form-container " action="index.html" method="get" style="display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center;">
-          <label for="name" class="form-group">
-            <input type="text" class="form-control" placeholder=" FULL USERNAME" name="name">
-          </label>
-          <label for="name" class="form-group">
-            <input type="text" class="form-control" placeholder=" FULL EMAIL"  name="email">
-          </label>
-          <label for="name" class="form-group">
-            <input type="text" class="form-control" placeholder=" buy code" name="buy_code">
-          </label>
-          <label for="name" class="form-group">
-            <input type="text" class="form-control" placeholder=" FULL PASSWORD" name="password">
-          </label>
-      
-          <label for="gender" class="form-group gender">
-          <select name="gender" class="form-select">
-            <option value="" class="form-option" >GENDER</option>
-            <option value="male" class="form-option">male</option>
-            <option value="female" class="form-option">female</option>
-            <option value="custom" class="form-option">custom</option>
-          </select>
-        </label>
-        <span><input type="checkbox" id="input" name="check" >i agree to <a href="SECURITY.md">terms and condition</a></span>
-          <button type="submit" id="click"  class="btn btn-primary"> REGISTER</button>
-       </form>
-       </center>
-          
-       <script>
-        var btn = document.getElementById("click");
-        var inputs = document.getElementById('input');
-     
-       btn.setAttribute("disabled","disabled")
-        inputs.addEventListener("change",()=>{
-            
-          if(btn.getAttribute("disabled")){
-            btn.removeAttribute("disabled")
-          }else{
-            btn.setAttribute("disabled","disabled")
-          }
-       
-        })
-           document.addEventListener('contextmenu', function(e) {
-           e.preventDefault();
-           });
-          document.onkeydown = (e) => {
-           if (e.key == 123) {
-            e.preventDefault();
-           }
-           if (e.ctrlKey && e.shiftKey && e.key == 'I') {
-            e.preventDefault();
-          }
-         if (e.ctrlKey && e.shiftKey && e.key == 'C') {
-          e.preventDefault();
-         }
-         if (e.ctrlKey && e.shiftKey && e.key == 'J') {
-           e.preventDefault();
-         }
-        if (e.ctrlKey && e.key == 'U') {
-           e.preventDefault();
-       }
-      };
+  <center>
 
-       </script>
-        </body>
+    <img id="image" src="logocfk.png" style="display: flex; justify-content: center; align-items: center;" alt="">
+    <span style="font-size: 30px; font-weight: 800; position: relative; top:-58px;">Welcome to CkF Mart</span>
+    <form class="form-container " method="post"
+      style="display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center;">
+      <label for="name" class="form-group">
+        <input type="text" class="form-control" placeholder=" FULL USERNAME" id="name">
+      </label>
+      <label for="email" class="form-group">
+        <input type="text" class="form-control" placeholder=" FULL EMAIL" id="email">
+      </label>
+      <label for="buy_code" class="form-group">
+        <input type="text" class="form-control" id="buy_code" placeholder=" buy code" readonly id="buy_code">
+      </label>
+      <label for="password" class="form-group">
+        <input type="text" class="form-control" placeholder=" FULL PASSWORD" id="password">
+      </label>
+
+      <label for="gender" class="form-control " style="padding: 40px 40px 40px 40px; height: 50px; ">
+        <select name="gender" id="gender" class="form-select">
+          <option value="" class="form-option">GENDER</option>
+          <option value="male" class="form-option">male</option>
+          <option value="female" class="form-option">female</option>
+          <option value="custom" class="form-option">custom</option>
+        </select>
+      </label>
+      <span><input type="checkbox" id="input" name="check">i agree to <a href="SECURITY.md">terms and
+          condition</a></span>
+      <button type="submit" id="click" class="btn btn-primary"> REGISTER</button>
+    </form>
+  </center>
+ <br><br><br>
+  <script>
+    var btn = document.getElementById("click");
+    var inputs = document.getElementById('input');
+    var form = document.querySelector("form");
+    var code = Math.floor(Math.random() * (243, 100340000) + 234);
+    window.addEventListener('load', () => {
+      document.getElementById('buy_code').value = code;
+    })
+    var store=localStorage.getItem("people")?localStorage.getItem("people"):'[]';
+    var users=[];
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      var buy_code = document.getElementById('buy_code').value;
+      var named = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var psw = document.getElementById('password').value;
+      var gender = document.getElementById('gender').value;
+
+      var user = { name: named, mail: email, pass: psw, gen: gender };
+      users.push(user);
+      JSON.parse(store).forEach(async item=>{
+       await users.push(item);
+      })
+
+      localStorage.setItem('people',JSON.stringify(users))
+     setTimeout(()=>{
+      window.location.href="/";
+     },3000)      
+    })
+
+    btn.setAttribute("disabled", "disabled")
+    inputs.addEventListener("change", () => {
+
+      if (btn.getAttribute("disabled")) {
+        btn.removeAttribute("disabled")
+      } else {
+        btn.setAttribute("disabled", "disabled")
+      }
+
+    })
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.onkeydown = (e) => {
+      if (e.key == 123) {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+        e.preventDefault();
+      }
+      if (e.ctrlKey && e.key == 'U') {
+        e.preventDefault();
+      }
+    };
+
+  </script>
+</body>
+
 </html>

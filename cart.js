@@ -6,14 +6,15 @@ var side_bar=document.getElementById("sidebar");
 var buy =document.querySelectorAll(".buynow");
 var cart_room =document.querySelector(".cart_room");
 var counter =document.querySelectorAll("#count");
-var pack = new URLSearchParams(window.location.search);
-const username=pack.get("name");
-const email=pack.get("email");
-const password=pack.get("password");
-const buy_code=pack.get("buy_code");
-const gender=pack.get("gender");
-document.getElementById("user_need").innerHTML=username.toLowerCase();
-document.getElementById("user_need2").innerHTML=username.toLowerCase();
+// var pack = new URLSearchParams(window.location.search);
+// const username=pack.get("name");
+// const email=pack.get("email");
+// const password=pack.get("password");
+// const buy_code=pack.get("buy_code");
+// const gender=pack.get("gender");
+var username =JSON.parse(localStorage.getItem("people"))[0].name;
+document.getElementById("user_need").innerHTML=username.trim();
+document.getElementById("user_need2").innerHTML=username.trim();
 
 
 cart_b.addEventListener("click",carted)
